@@ -1,23 +1,42 @@
 import React from 'react'
 import { Link } from 'gatsby'
+// import './header.module.scss'
+import headerStyles from './header.module.scss'
 
 function Header() {
     return (
-        <header>
-            <h1>Todd's Party Shack</h1>
+        <header className={headerStyles.header}>
+            <h1>
+                <Link className={headerStyles.title} to='/'>
+                    Todd's Party Shack
+                </Link>
+            </h1>
             <nav>
-                <ul>
-                    <li style={{listStyleType: 'none'}}>
-                        <Link to='/'>Home</Link>
+                <ul className={headerStyles.navList}>
+                    <li>
+                        <Link to='/' className={headerStyles.navItem}
+                            activeClassName={headerStyles.activeNavItem}>
+                            Home
+                        </Link>
                     </li>
-                    <li style={{listStyleType: 'none'}}>
-                        <Link to='/blog'>Blog</Link>
+                    <li>
+                        <Link to='/blog' className={headerStyles.navItem}
+                            activeClassName={headerStyles.activeNavItem}>
+                            Blog
+                        </Link>
                     </li>
-                    <li style={{listStyleType: 'none'}}>
-                        <Link to='/about'>About</Link>
+                    <li>
+                        <Link to='/about'
+                            className={headerStyles.navItem}
+                            activeClassName={headerStyles.activeNavItem}>
+                            About
+                        </Link>
                     </li>
-                    <li style={{listStyleType: 'none'}}>
-                        <Link to='/contact'>Contact</Link>
+                    <li>
+                        <Link to='/contact' className={headerStyles.navItem}
+                            activeClassName={headerStyles.activeNavItem}>
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </nav>

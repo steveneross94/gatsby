@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Footer from '../components/footer'
-import Header from '../components/header'
+import Layout from '../components/layout'
 
 function ContactPage() {
 
@@ -16,7 +15,7 @@ function ContactPage() {
             Object.keys(myInfo).map((item, i) => {
                 return (
                     <ul>
-                        <li style={{listStyleType: "none"}} key={i}>{item.charAt(0).toUpperCase()+item.slice(1)}: {myInfo[item]}</li>
+                        <li style={{ listStyleType: "none" }} key={i}>{item.charAt(0).toUpperCase() + item.slice(1)}: {myInfo[item]}</li>
                     </ul>
                 )
             })
@@ -24,12 +23,10 @@ function ContactPage() {
     }
 
     return (
-        <div>
-            <Header />
+        <Layout>
             <h1>My Contact Info</h1>
             {postMyInfo(myInfo)}
-            <Footer />
-        </div>
+        </Layout>
     )
 }
 
