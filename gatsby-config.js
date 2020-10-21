@@ -9,4 +9,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass'
   ],
+  siteMetadata: {
+    title: "Steven Ross",
+    author: "Steven Ross",
+    email: 'ross.stevenedward@gmail.com',
+    portfolio: 'https://www.steven-ross.com',
+    linkedIn: 'https://www.linkedin.com/in/steveneross1',
+    phone: '347-497-0802'
+  }
 }
