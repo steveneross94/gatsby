@@ -46,6 +46,7 @@ module.exports = {
     author: "Steven Ross",
     email: 'ross.stevenedward@gmail.com',
     portfolio: 'https://www.steven-ross.com',
-    linkedIn: 'https://www.linkedin.com/in/steveneross1'
+    linkedIn: 'https://www.linkedin.com/in/steveneross1',
+    twitter: 'https://twitter.com/senorr_ross'
   }
 }

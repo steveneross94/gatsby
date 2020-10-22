@@ -11,7 +11,8 @@ function ContactPage() {
                 siteMetadata {
                     portfolio,
                     linkedIn,
-                    email
+                    email,
+                    twitter
                 }
             }
         }
@@ -35,6 +36,10 @@ function ContactPage() {
                 <li style={{listStyleType: 'none'}}>
                     Portfolio: <a href={info.portfolio} className={linkStyles.linkItem}>
                         {info.portfolio}</a>
+                </li>
+                <li style={{listStyleType: 'none'}}>
+                    Twitter: <a href={info.twitter} className={linkStyles.linkItem}>
+                        {info.twitter}</a>
                 </li>
             </ul>
         </Layout>
