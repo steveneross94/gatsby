@@ -4,17 +4,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-// export const query = graphql`
-// query($slug: String!){
-//     markdownRemark (fields: { slug: { eq:$slug } }) {
-//         frontmatter {
-//             title
-//             date
-//         }
-//         html
-//     }
-// }
-// `
 
 export const query = graphql`
     query($slug: String!){
